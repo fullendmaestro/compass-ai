@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
+import type { Metadata } from "next";
 
 import "@compass/ui/globals.css";
 import { Providers } from "@/components/providers";
@@ -13,6 +14,21 @@ const fontMono = Geist_Mono({
   subsets: ["latin"],
   variable: "--font-mono",
 });
+
+export const metadata: Metadata = {
+  title: "Compass AI - Navigate the World with AI Precision",
+  description:
+    "Your personal AI assistant for geographic exploration. Discover new places, plan adventures, and navigate with intelligent insights.",
+  keywords: [
+    "AI",
+    "maps",
+    "navigation",
+    "travel",
+    "exploration",
+    "geographic",
+    "compass",
+  ],
+};
 
 export default function RootLayout({
   children,

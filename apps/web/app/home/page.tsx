@@ -1,5 +1,7 @@
 "use client";
 import dynamic from "next/dynamic";
+import { ExplorationPanel } from "@/components/exploration/exploration-panel";
+import { ExplorationHeader } from "@/components/exploration/exploration-header";
 
 // Disable server-side rendering for the MapCanvas component, this
 // is because Leaflet is not compatible with server-side rendering
@@ -16,8 +18,10 @@ MapCanvas = dynamic(
 
 export default function Page() {
   return (
-    <main className="h-screen w-screen">
+    <main className="relative h-screen w-screen overflow-hidden">
       <MapCanvas />
+      <ExplorationPanel />
+      <ExplorationHeader />
     </main>
   );
 }
