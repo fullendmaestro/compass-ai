@@ -5,8 +5,8 @@ import {
   MoreHorizontalIcon,
 } from "lucide-react"
 
-import { cn } from "@workspace/ui/lib/utils"
-import { Button, buttonVariants } from "@workspace/ui/components/button"
+import { cn } from "@compass/ui/lib/utils"
+import { Button, buttonVariants } from "@compass/ui/components/button"
 
 function Pagination({ className, ...props }: React.ComponentProps<"nav">) {
   return (
@@ -125,3 +125,4 @@ export {
   PaginationNext,
   PaginationEllipsis,
 }
+
